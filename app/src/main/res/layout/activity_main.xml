@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:shadowColor="#CD0E0E"
+        android:text="Select Your Next Vehicle "
+        android:textSize="48sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSUV"
+        android:layout_width="259dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/stockimage5" />
+
+    <ImageView
+        android:id="@+id/imageViewELECTRIC"
+        android:layout_width="259dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSEDAN"
+        app:srcCompat="@drawable/stockimage7" />
+
+    <ImageView
+        android:id="@+id/imageViewSEDAN"
+        android:layout_width="258dp"
+        android:layout_height="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSUV"
+        app:srcCompat="@drawable/stockimage9" />
+
+    <ImageView
+        android:id="@+id/imageViewSUPER"
+        android:layout_width="261dp"
+        android:layout_height="163dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewELECTRIC"
+        app:srcCompat="@drawable/stockimage8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
